@@ -7,59 +7,54 @@ function Hero() {
     <div id="home" className="min-h-screen flex pt-16 h-screen text-center">
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Profile  */}
+          {/* Profile  */}
           <div className="text-center lg:text-left">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-10">
               <span className="text-zinc-700">Frontend Developer</span>
               <br />
               <span className="text-cyan-700 font-orbitron">Angular</span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl 
-            text-zinc-600 mb-6">
-              I build responsive and interactive web applications using modern technologies.
+            <p
+              className="text-lg sm:text-xl md:text-2xl 
+            text-zinc-600 mb-6"
+            >
+              I build responsive and interactive web applications using modern
+              technologies.
             </p>
             <div className="flex flex-col md:flex-row items-center gap-4">
-                <button className="flex gap-2 items-center bg-black text-slate-200 px-10 py-4 rounded-full hover:text-white cursor-pointer transition-all duration-300">
-                    View Projects
-                    <FaArrowRight className="ml-2" />
-                </button>
-                <button className="flex gap-2 items-center border border-slate-400 rounded-full px-10 py-4 hover:border-slate-800 transition duration-300 cursor-pointer">
-                    Contact Me
-                    <FaArrowRight className="ml-2" />
-                </button>
+              <button className="flex gap-2 items-center bg-black text-slate-200 px-10 py-4 rounded-full hover:text-white cursor-pointer transition-all duration-300">
+                View Projects
+                <FaArrowRight className="ml-2" />
+              </button>
+              <button className="flex gap-2 items-center border border-slate-400 rounded-full px-10 py-4 hover:border-slate-800 transition duration-300 cursor-pointer">
+                Contact Me
+                <FaArrowRight className="ml-2" />
+              </button>
             </div>
           </div>
           {/* Profile Image */}
           <div className="flex justify-center ">
             <div className="relative w-72 h-72 sm:w-80 sm:h-80 floating">
               <div className="absolute inset-0 rounded-2xl overflow-hidden border-4  border-slate-600/30 glow">
-                <img src={assets.profileImg} alt="Profile" className="w-full h-full object-cover" />
+                <img
+                  src={assets.profileImg}
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-xl border border-slate-600/20 overflow-hidden p-3">
-              
-              <div className="w-full h-full flex items-center justify-center ">
-                <div className='text-center'>
-                    <div className='text-3xl font-bold text-white'>5+</div>
-                    <div className='text-sm text-white'>years Exp</div>
-
+                <div className="w-full h-full flex items-center justify-center ">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-white">5+</div>
+                    <div className="text-sm text-white">years Exp</div>
+                  </div>
                 </div>
-
               </div>
-              </div>
-
-              </div>
-
-            </div>
-
-          </div>
-         
-
             </div>
           </div>
-          
-     
-     
-   
+        </div>
+      </div>
+    </div>
   );
 }
 
