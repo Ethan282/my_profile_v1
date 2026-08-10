@@ -29,7 +29,7 @@ const Contact = () => {
                             <textarea className='px-4 h-40 w-full py-3 border border-zinc-500 rounded outline-none' type="textarea" placeholder='Enter Massage' />
                         </div>
                         <div className='flex items-center justify-center md:items-end md:justify-end'>
-                            <button className='flex items-center gap-2 px-8 py-4 bg-zinc-800 text-white text-center cursor-pointer hover:bg-zinc-900 transition rounded-full '>Send Massage
+                            <button className='flex items-center gap-2 px-8 py-4 bg-zinc-800 text-white text-center cursor-pointer hover:scale-105 hover:bg-zinc-900 transition rounded-full '>Send Massage
                                 <FaArrowRight />
                             </button>
                         </div>

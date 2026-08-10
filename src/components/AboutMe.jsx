@@ -35,7 +35,7 @@ function AboutMe() {
                                 ))
                             }
                         </div>
-                        <button className='px-8 py-4 bg-zinc-700 text-white rounded-full cursor-pointer transition duration-300  hover:bg-zinc-900'>
+                        <button className='px-8 py-4 bg-zinc-700 text-white rounded-full cursor-pointer transition duration-300 hover:scale-105  hover:bg-zinc-900'>
                             Download Resume
                         </button>
                     </div>

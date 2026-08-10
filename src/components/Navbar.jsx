@@ -13,9 +13,10 @@ function Navbar() {
             <span className="text-teal-800 font-orbitron">TUFAN</span>
           </div>
           {/* Menu */}
-          <div className="hidden md:flex space-x-6 border border-gray-200  rounded-full px-10 py-4 ">
+          <div className="hidden md:flex space-x-6 border border-zinc-400  rounded-full px-10 py-4 ">
             {navMenu.map((item, index) => (
               <a
+              className=" hover:scale-105 sm:hover:border-b hover:text-teal-900 hover:font-bold"
                 key={index}
                 href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
               >
@@ -26,9 +27,9 @@ function Navbar() {
 
           {/* button */}
           <div className="">
-            <button className='px-10 py-4 border border-zinc-800 hover:text-slate-800 rounded-full flex items-center gap-2 transition-all duration-300 text-slate-500 cursor-pointer hover:translate-y-1'>
+            <button className='px-10 py-4 border border-zinc-800 hover:text-white hover:bg-gray-700  rounded-full flex items-center gap-2 transition-all duration-300 text-slate-500 cursor-pointer hover:translate-y-1'>
               Resume
-              <FaArrowRight className="text-gray-500 text-sm" />
+              <FaArrowRight className="text-gray-500 hover:text-white text-sm" />
             </button>
           </div>
         </div>

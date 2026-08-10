@@ -22,14 +22,14 @@ function Hero() {
               technologies.
             </p>
             <div className="flex flex-col md:flex-row items-center gap-4">
-              <button className="flex gap-2 items-center bg-black text-slate-200 px-10 py-4 rounded-full hover:text-white cursor-pointer transition-all duration-300">
+              <a href="#work" className="flex gap-2 items-center bg-zinc-700 hover:bg-slate-900 text-slate-200 px-10 py-4 rounded-full hover:text-white cursor-pointer  hover:scale-105 transition-all duration-300">
                 View Projects
                 <FaArrowRight className="ml-2" />
-              </button>
-              <button className="flex gap-2 items-center border border-slate-400 rounded-full px-10 py-4 hover:border-slate-800 transition duration-300 cursor-pointer">
+              </a>
+              <a href="#contact" className="flex gap-2 items-center border border-slate-400 rounded-full px-10 py-4 hover:scale-105 hover:border-slate-900 transition duration-300 cursor-pointer">
                 Contact Me
                 <FaArrowRight className="ml-2" />
-              </button>
+              </a>
             </div>
           </div>
           {/* Profile Image */}
