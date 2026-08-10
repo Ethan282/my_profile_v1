@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { assets } from "../assets/asstes.js";
+import { motion } from "motion/react";
 
 function Hero() {
   return (
@@ -8,7 +9,12 @@ function Hero() {
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Profile  */}
-          <div className="text-center lg:text-left">
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center lg:text-left">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-10">
               <span className="text-zinc-700">Frontend Developer</span>
               <br />
@@ -31,9 +37,14 @@ function Hero() {
                 <FaArrowRight className="ml-2" />
               </a>
             </div>
-          </div>
+          </motion.div>
           {/* Profile Image */}
-          <div className="flex justify-center ">
+          <motion.div
+            initial={{ scale: 0.2, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="flex justify-center ">
             <div className="relative w-72 h-72 sm:w-80 sm:h-80 floating">
               <div className="absolute inset-0 rounded-2xl overflow-hidden border-4  border-slate-600/30 glow">
                 <img
@@ -51,7 +62,7 @@ function Hero() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

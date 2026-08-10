@@ -2,10 +2,15 @@ import React from "react";
 import { navMenu } from "../assets/asstes.js";
 import cvFile from "../assets/Tufan_Dutta _CV.pdf";
 import { FaArrowRight } from "react-icons/fa6";
+import { motion } from "motion/react"
 
 function Navbar() {
   return (
-    <div className="fixed w-full py-4 z-50 backdrop-blur-3xl">
+    <motion.div
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="fixed w-full py-4 z-50 backdrop-blur-3xl">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between">
           {/* logo */}
@@ -17,7 +22,7 @@ function Navbar() {
           <div className="hidden md:flex space-x-6 border border-zinc-400  rounded-full px-10 py-4 ">
             {navMenu.map((item, index) => (
               <a
-              className=" hover:scale-105 sm:hover:border-b hover:text-teal-900 hover:font-bold"
+                className=" hover:scale-105 sm:hover:border-b hover:text-teal-900 hover:font-bold"
                 key={index}
                 href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
               >
@@ -35,7 +40,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
