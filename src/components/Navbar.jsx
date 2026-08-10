@@ -1,5 +1,6 @@
 import React from "react";
 import { navMenu } from "../assets/asstes.js";
+import cvFile from "../assets/Tufan_Dutta _CV.pdf";
 import { FaArrowRight } from "react-icons/fa6";
 
 function Navbar() {
@@ -27,10 +28,10 @@ function Navbar() {
 
           {/* button */}
           <div className="">
-            <button className='px-10 py-4 border border-zinc-800 hover:text-white hover:bg-gray-700  rounded-full flex items-center gap-2 transition-all duration-300 text-slate-500 cursor-pointer hover:translate-y-1'>
+            <a href={cvFile} download="Tufan_Dutta_CV.pdf" className='px-10 py-4 border border-zinc-800 hover:text-white hover:bg-gray-700  rounded-full flex items-center gap-2 transition-all duration-300 text-slate-500 cursor-pointer hover:translate-y-1'>
               Resume
               <FaArrowRight className="text-gray-500 hover:text-white text-sm" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

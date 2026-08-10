@@ -1,5 +1,6 @@
 import React from 'react'
 import {assets, profileData} from '../assets/asstes'
+import cvFile from '../assets/Tufan_Dutta _CV.pdf'
 import { FaCode } from 'react-icons/fa6'
 
 function AboutMe() {
@@ -35,9 +36,9 @@ function AboutMe() {
                                 ))
                             }
                         </div>
-                        <button className='px-8 py-4 bg-zinc-700 text-white rounded-full cursor-pointer transition duration-300 hover:scale-105  hover:bg-zinc-900'>
+                        <a href={cvFile} download="Tufan_Dutta_CV.pdf" className='px-8 py-4 bg-zinc-700 text-white rounded-full cursor-pointer transition duration-300 hover:scale-105  hover:bg-zinc-900 inline-block'>
                             Download Resume
-                        </button>
+                        </a>
                     </div>
                     <div className='order-1 lg:order-2 justify-center pt-8 px-8'>
                             <div className=" relative w-full ">
