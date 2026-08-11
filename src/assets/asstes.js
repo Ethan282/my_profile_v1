@@ -1,11 +1,15 @@
 import { FaCode, FaDesktop, FaMicrochip, FaMobile, FaReact, FaSchool } from 'react-icons/fa6'
 import profileImg from '../assets/tufan_pp.avif'
 import { FaProjectDiagram } from 'react-icons/fa'
+import email_icon from '../assets/email_icon.svg'
+import person_icon from '../assets/person_icon.svg'
 
 
 
 export const assets = {
     profileImg,
+    email_icon,
+    person_icon,
 }
 
 
@@ -29,7 +33,7 @@ export const skillsData = [
         technologies: ['Nginx', 'Linux', 'Wsgi', 'Server']
     },
     {
-        icon: FaCode ,
+        icon: FaCode,
         title: 'DevOps',
         technologies: ['Linux', 'Git', 'Github', 'Docker', 'Jenkins', 'CI/CD']
     },
@@ -71,18 +75,18 @@ export const projectData = [
 
 export const profileData = [
     {
-        icon: FaCode ,
+        icon: FaCode,
         title: 'Language',
-        technologies : ['Python', 'Django', 'Rest', 'React', 'Tailwindcss']
+        technologies: ['Python', 'Django', 'Rest', 'React', 'Tailwindcss']
     },
     {
-        icon: FaSchool ,
+        icon: FaSchool,
         title: 'Education',
-        technologies : ['B.Tech in Compuer Science']
+        technologies: ['B.Tech in Compuer Science']
     },
     {
-        icon: FaProjectDiagram ,
+        icon: FaProjectDiagram,
         title: 'Projects',
-        technologies : ['Built more than 25+']
+        technologies: ['Built more than 25+']
     },
 ]

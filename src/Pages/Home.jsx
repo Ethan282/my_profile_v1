@@ -6,10 +6,12 @@ import Skills from '../components/Skills'
 import AboutMe from '../components/AboutMe'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import toast, { Toaster } from 'react-hot-toast';
 
 const Home = () => {
   return (
     <div>
+       <Toaster reverseOrder={false} />
       <Navbar />
       <Hero />
       <Work />

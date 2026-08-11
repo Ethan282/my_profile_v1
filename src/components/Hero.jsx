@@ -42,7 +42,7 @@ function Hero() {
           <motion.div
             initial={{ scale: 0.2, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 2, delay: 0.5 }}
             viewport={{ once: true }}
             className="flex justify-center ">
             <div className="relative w-72 h-72 sm:w-80 sm:h-80 floating">
